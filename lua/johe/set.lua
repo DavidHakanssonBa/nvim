@@ -39,4 +39,3 @@ vim.filetype.add({
     end,
   },
 })
-

@@ -22,6 +22,7 @@ return {
         -- Highlighting
         highlight = {
           enable = true,
+          disable = { "json" },
           additional_vim_regex_highlighting = false,
         },
 
