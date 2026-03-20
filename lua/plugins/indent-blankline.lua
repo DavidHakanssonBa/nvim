@@ -6,4 +6,3 @@ return {
     scope = { enabled = true }, -- highlight current scope
   },
 }
-

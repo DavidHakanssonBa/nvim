@@ -15,4 +15,3 @@ vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww goto<CR>", { desc = "Open t
 -- Buffer navigation
 vim.keymap.set("n", "<Tab>", ":bnext<CR>", { noremap = true, silent = true, desc = "Next buffer" })
 vim.keymap.set("n", "<S-Tab>", ":bprevious<CR>", { noremap = true, silent = true, desc = "Previous buffer" })
-
