@@ -32,6 +32,7 @@ return {
 
       -- etc.
       { "<leader>fr", "<cmd>Telescope resume<cr>", desc = "Telescope Resume Last Picker" },
+      { "<leader>fk", "<cmd>Telescope keymaps<cr>", desc = "Telescope Keymaps" },
     },
     config = function()
       require("telescope").setup({
