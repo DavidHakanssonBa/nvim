@@ -24,8 +24,8 @@ return {
         end, desc = "Find Files in Current Dir" },
 
       -- grep
-      { "<leader>sg", "<cmd>Telescope live_grep<cr>",  desc = "Telescope Live Grep" },
-      { "<leader>sd", "<cmd>LiveGrepInDir<cr>", desc = "Telescope Live Grep in Directory" },
+      { "<leader>fw", "<cmd>Telescope live_grep<cr>",  desc = "Telescope Live Grep" },
+      { "<leader>fd", "<cmd>LiveGrepInDir<cr>", desc = "Telescope Live Grep in Directory" },
       { "<leader>sc", function()
           require("telescope.builtin").live_grep({ cwd = vim.fn.expand("%:p:h") })
         end, desc = "Live Grep in Current Dir" },
