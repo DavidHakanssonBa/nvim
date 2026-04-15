@@ -14,6 +14,7 @@ return {
         { "<leader>g", group = "git" },
         { "<leader>s", group = "search" },
         { "<leader>y", group = "yank" },
+        { "<leader>b", group = "buffers" },
         { "z",         group = "fold" },
       })
     end,
