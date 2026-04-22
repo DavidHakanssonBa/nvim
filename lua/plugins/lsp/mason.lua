@@ -47,7 +47,8 @@ mason_lspconfig.setup({
     "ansiblels",
     "jsonls",
     "pyright",
-    "ts_ls"
+    "ts_ls",
+    "yamlls",
   },
   handlers = {
     function(server_name)
@@ -66,6 +67,25 @@ mason_lspconfig.setup({
           python = {
             pythonPath = python_path,
           },
+        },
+      })
+    end,
+    yamlls = function()
+    lspconfig.yamlls.setup({
+        capabilities = capabilities,
+        on_attach = on_attach,
+        settings = {
+            yaml = {
+                customTags = { "!reference sequence" },
+                schemas = {
+                    ["https://gitlab.com/gitlab-org/gitlab/-/raw/master/app/assets/javascripts/editor/schema/ci.json"] = {
+                        ".gitlab-ci.yml",
+                        ".gitlab-ci.yaml",
+                        ".gitlab/**/*.yml",
+                        ".gitlab/**/*.yaml",
+                    },
+                },
+            },
         },
       })
     end,
